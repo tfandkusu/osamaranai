@@ -52,3 +52,7 @@ app.*.map.json
 .fvm/versions
 .fvm/version
 .fvm/release
+
+# Ruby / Bundler
+/vendor/bundle/
+/.bundle/
