@@ -47,11 +47,8 @@ app.*.map.json
 # Widget Preview related
 .widget_preview/
 
-# FVM Version Cache
-.fvm/flutter_sdk
-.fvm/versions
-.fvm/version
-.fvm/release
+# FVM (legacy)
+.fvm/
 
 # Ruby / Bundler
 /vendor/bundle/

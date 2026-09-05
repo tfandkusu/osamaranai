@@ -1,4 +1,14 @@
 {
   "java.compile.nullAnalysis.mode": "automatic",
-  "dart.flutterSdkPath": ".fvm/versions/3.47.2"
+  "dart.getFlutterSdkCommand": {
+    "executable": "mise",
+    "args": ["where", "flutter"]
+  },
+  "dart.getDartSdkCommand": {
+    "executable": "bash",
+    "args": [
+      "-c",
+      "sdk=$(mise where flutter) || exit 1; echo \"$sdk/bin/cache/dart-sdk\""
+    ]
+  }
 }
