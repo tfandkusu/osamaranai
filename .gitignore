@@ -56,3 +56,6 @@ app.*.map.json
 # Ruby / Bundler
 /vendor/bundle/
 /.bundle/
+
+# mise generated Flutter SDK symlink
+/.mise/
