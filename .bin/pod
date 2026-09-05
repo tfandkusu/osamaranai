@@ -1,7 +1,0 @@
-#!/usr/bin/env bash
-set -euo pipefail
-ROOT="$(cd "$(dirname "$0")/.." && pwd)"
-cd "$ROOT"
-# Prevent recursive resolution via .bin/pod on PATH
-export PATH="$(echo "$PATH" | tr ':' '\n' | grep -Fv "$ROOT/.bin" | awk 'NR>1{printf ":"} {printf "%s",$0}')"
-exec bundle exec pod "$@"
