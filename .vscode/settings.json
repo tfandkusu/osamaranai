@@ -1,4 +1,22 @@
 {
   "java.compile.nullAnalysis.mode": "automatic",
-  "dart.flutterSdkPath": ".fvm/versions/3.47.2"
+  "dart.getFlutterSdkCommand": {
+    "executable": "mise",
+    "args": ["where", "flutter"]
+  },
+  "dart.getDartSdkCommand": {
+    "executable": "bash",
+    "args": [
+      "-c",
+      "sdk=$(mise where flutter) || exit 1; echo \"$sdk/bin/cache/dart-sdk\""
+    ]
+  },
+  "mise.configureExtensionsAutomatically": true,
+  "mise.configureExtensionsIncludeGlobalTools": false,
+  "mise.updateEnvAutomatically": true,
+  "mise.updateEnvAutomaticallyIncludePath": true,
+  "mise.updateOpenTerminalsEnvAutomatically": true,
+  "terminal.integrated.env.osx": {
+    "PATH": "${env:HOME}/.local/share/mise/shims:${env:PATH}"
+  }
 }

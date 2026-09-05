@@ -15,7 +15,7 @@ jobs:
       - name: Read Flutter version
         id: flutter_version
         run: |
-          version=$(jq -r '.flutterSdkVersion' .fvm/fvm_config.json)
+          version=$(grep -E '^flutter\s*=' .mise.toml | grep -oE '[0-9]+\.[0-9]+\.[0-9]+')
           echo "version=$version" >> "$GITHUB_OUTPUT"
 
       - name: Setup Flutter
