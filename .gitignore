@@ -48,4 +48,7 @@ app.*.map.json
 .widget_preview/
 
 # FVM Version Cache
-.fvm/
+.fvm/flutter_sdk
+.fvm/versions
+.fvm/version
+.fvm/release
