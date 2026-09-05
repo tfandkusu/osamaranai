@@ -1,0 +1,13 @@
+[tools]
+ruby = "4.0.6"
+
+[env]
+_.path = [".bin"]
+
+[tasks.pod]
+description = "Run CocoaPods via Bundler"
+run = ".bin/pod"
+dir = "{{ config_root }}"
+
+[hooks]
+postinstall = ["bundle install"]
