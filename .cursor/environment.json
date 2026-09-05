@@ -1,0 +1,6 @@
+{
+  "$schema": "https://cursor.com/schemas/environment.schema.json",
+  "name": "osamaranai",
+  "install": "bash .cursor/install.sh",
+  "enable_testing": false
+}
