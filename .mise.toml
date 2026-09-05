@@ -1,6 +1,17 @@
 [tools]
 ruby = "4.0.6"
+flutter = "3.47.2"
+
+[env]
+PUB_CACHE = "{{ env.HOME }}/.cache/pub-cache"
+
+[settings]
+env_cache = true
 
 [hooks]
-postinstall = ["bundle install"]
-
+postinstall = [
+  "bundle config set --local path vendor/bundle",
+  "bundle install",
+  "flutter pub get",
+  "bash -c 'mkdir -p .mise && ln -sfn \"$(dirname \"$(dirname \"$(mise which flutter)\")\")\" .mise/flutter'",
+]
