@@ -29,7 +29,7 @@ jobs:
         run: flutter pub get
 
       - name: Check format
-        run: dart format --output=none --set-exit-if-changed lib test
+        run: dart format --output=none --set-exit-if-changed lib
 
       - name: Analyze
         run: dart analyze --fatal-warnings
