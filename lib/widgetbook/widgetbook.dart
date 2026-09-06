@@ -22,10 +22,7 @@ class WidgetbookApp extends StatelessWidget {
           theme: ThemeData(
             colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
           ),
-          home: Scaffold(
-            appBar: AppBar(title: const Text('端末スペック')),
-            body: Padding(padding: const EdgeInsets.all(16), child: child),
-          ),
+          home: child,
         );
       },
     );
