@@ -14,6 +14,21 @@ class WidgetbookApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Widgetbook.material(directories: directories, addons: []);
+    return Widgetbook.material(
+      directories: directories,
+      addons: [],
+      appBuilder: (context, child) {
+        return MaterialApp(
+          debugShowCheckedModeBanner: false,
+          theme: ThemeData(
+            colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+          ),
+          home: Scaffold(
+            appBar: AppBar(title: const Text('端末スペック')),
+            body: Padding(padding: const EdgeInsets.all(16), child: child),
+          ),
+        );
+      },
+    );
   }
 }
