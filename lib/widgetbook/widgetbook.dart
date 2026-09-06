@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:osamaranai/widgetbook/widgetbook.directories.g.dart';
 import 'package:widgetbook/widgetbook.dart';
 import 'package:widgetbook_annotation/widgetbook_annotation.dart' as widgetbook;
-
-import 'package:osamaranai/widgetbook.directories.g.dart';
 
 void main() {
   runApp(const WidgetbookApp());

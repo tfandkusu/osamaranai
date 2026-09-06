@@ -13,7 +13,7 @@
             "name": "widgetbook",
             "request": "launch",
             "type": "dart",
-            "program": "lib/widgetbook.dart"
+            "program": "lib/widgetbook/widgetbook.dart"
         },
         {
             "name": "osamaranai (profile mode)",

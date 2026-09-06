@@ -11,8 +11,8 @@
 
 // ignore_for_file: no_leading_underscores_for_library_prefixes
 
-import 'package:osamaranai/logical_pixel_card.usecase.dart'
-    as _osamaranai_logical_pixel_card_usecase;
+import 'package:osamaranai/widgetbook/logical_pixel_card.usecase.dart'
+    as _osamaranai_widgetbook_logical_pixel_card_usecase;
 import 'package:widgetbook/widgetbook.dart' as _widgetbook;
 
 final directories = <_widgetbook.WidgetbookNode>[
@@ -21,7 +21,8 @@ final directories = <_widgetbook.WidgetbookNode>[
     useCases: [
       _widgetbook.WidgetbookUseCase(
         name: 'Default',
-        builder: _osamaranai_logical_pixel_card_usecase.logicalPixelCardUseCase,
+        builder: _osamaranai_widgetbook_logical_pixel_card_usecase
+            .logicalPixelCardUseCase,
       ),
     ],
   ),
