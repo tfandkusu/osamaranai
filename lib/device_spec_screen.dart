@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'package:osamaranai/logical_pixel_card.dart';
+
 class DeviceSpecScreen extends StatelessWidget {
   const DeviceSpecScreen({super.key});
 
@@ -14,29 +16,12 @@ class DeviceSpecScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final size = MediaQuery.sizeOf(context);
-
     return Scaffold(
       appBar: AppBar(title: const Text('端末スペック')),
       body: ListView(
         padding: const EdgeInsets.all(16),
         children: [
-          Card(
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                const ListTile(title: Text('論理ピクセル')),
-                ListTile(
-                  title: const Text('幅'),
-                  trailing: Text('${size.width.toStringAsFixed(1)} px'),
-                ),
-                ListTile(
-                  title: const Text('高さ'),
-                  trailing: Text('${size.height.toStringAsFixed(1)} px'),
-                ),
-              ],
-            ),
-          ),
+          const LogicalPixelCard(),
           const SizedBox(height: 16),
           const ListTile(
             title: Text('文字サイズの拡大倍率'),
