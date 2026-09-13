@@ -5,3 +5,4 @@ flutter_version=$(grep -E '^flutter\s*=' .mise.toml | grep -oE '[0-9]+\.[0-9]+\.
 fvm install "${flutter_version}"
 fvm global "${flutter_version}"
 flutter pub get
+bash .cursor/verify-github-issues.sh
