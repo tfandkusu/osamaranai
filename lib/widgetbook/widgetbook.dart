@@ -20,7 +20,7 @@ class WidgetbookApp extends StatelessWidget {
         ViewportAddon([
           CustomIosViewports.iphoneSE1stGen,
           AndroidViewports.samsungGalaxyS20,
-          IosViewports.iPhoneSE,
+          CustomIosViewports.iphoneSE3rd,
           IosViewports.iPhone13,
           IosViewports.iPhone13ProMax,
         ]),
