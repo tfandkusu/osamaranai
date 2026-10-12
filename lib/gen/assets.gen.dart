@@ -17,16 +17,12 @@ import 'package:vector_graphics/vector_graphics.dart' as _vg;
 class $AssetsImagesGen {
   const $AssetsImagesGen();
 
-  /// File path: assets/images/login_indicator.svg
-  SvgGenImage get loginIndicator =>
-      const SvgGenImage('assets/images/login_indicator.svg');
-
   /// File path: assets/images/verified_badge.svg
   SvgGenImage get verifiedBadge =>
       const SvgGenImage('assets/images/verified_badge.svg');
 
   /// List of all assets
-  List<SvgGenImage> get values => [loginIndicator, verifiedBadge];
+  List<SvgGenImage> get values => [verifiedBadge];
 }
 
 abstract final class Assets {
