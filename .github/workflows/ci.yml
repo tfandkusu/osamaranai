@@ -28,6 +28,11 @@ jobs:
       - name: Install dependencies
         run: flutter pub get
 
+      - name: Verify code generation
+        run: |
+          dart run build_runner build
+          git diff --exit-code
+
       - name: Check format
         run: dart format --output=none --set-exit-if-changed lib
 
