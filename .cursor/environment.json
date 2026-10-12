@@ -2,5 +2,17 @@
   "$schema": "https://cursor.com/schemas/environment.schema.json",
   "name": "osamaranai",
   "install": "bash .cursor/install.sh",
-  "enable_testing": false
+  "enable_testing": false,
+  "egressAllowlist": [
+    "mcp.figma.com",
+    "api.figma.com",
+    "figma.com",
+    "www.figma.com"
+  ],
+  "mcpServerAllowlist": [
+    {
+      "name": "Figma",
+      "serverUrl": "https://mcp.figma.com/mcp"
+    }
+  ]
 }
