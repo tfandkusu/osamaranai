@@ -4,8 +4,5 @@ import 'package:widgetbook_annotation/widgetbook_annotation.dart';
 
 @UseCase(name: 'Default', type: AgeAndAddressLabel)
 Widget ageAndAddressLabelUseCase(BuildContext context) {
-  return const Padding(
-    padding: EdgeInsets.symmetric(horizontal: 16),
-    child: AgeAndAddressLabel(age: 24, address: '神奈川'),
-  );
+  return const Center(child: AgeAndAddressLabel(age: 24, address: '神奈川'));
 }
