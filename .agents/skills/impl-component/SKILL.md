@@ -36,6 +36,8 @@ description: 共通コンポーネントを実装するスキルです。
 
 - 共通コンポーネントを追加したら Widgetbook にも登録する
 - UseCase メソッドの命名は「コンポーネント名のキャメルケース + UseCase」とする
+- UseCase では対象 Widget を **AppBar 付き `Scaffold` の `body`** に載せる（`body` 内は `Column` + `Padding` などでよい）
+- `AppBar` の `title` は **Widget クラス名と同じ文字列**にする（例: `AgeAndAddressLabel`）
 
 # Figma URL がある場合
 

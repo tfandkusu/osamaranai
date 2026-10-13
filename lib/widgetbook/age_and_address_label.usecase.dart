@@ -5,7 +5,7 @@ import 'package:widgetbook_annotation/widgetbook_annotation.dart';
 @UseCase(name: 'Default', type: AgeAndAddressLabel)
 Widget ageAndAddressLabelUseCase(BuildContext context) {
   return Scaffold(
-    appBar: AppBar(title: const Text('年齢・住所')),
+    appBar: AppBar(title: const Text('AgeAndAddressLabel')),
     body: Column(
       children: [
         const Padding(

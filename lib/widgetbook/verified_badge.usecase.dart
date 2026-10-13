@@ -4,5 +4,12 @@ import 'package:widgetbook_annotation/widgetbook_annotation.dart';
 
 @UseCase(name: 'Default', type: VerifiedBadge)
 Widget verifiedBadgeUseCase(BuildContext context) {
-  return const Center(child: VerifiedBadge());
+  return Scaffold(
+    appBar: AppBar(title: const Text('VerifiedBadge')),
+    body: Column(
+      children: [
+        const Padding(padding: EdgeInsets.all(16), child: VerifiedBadge()),
+      ],
+    ),
+  );
 }
