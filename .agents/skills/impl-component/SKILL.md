@@ -38,6 +38,7 @@ description: 共通コンポーネントを実装するスキルです。
 - UseCase メソッドの命名は「コンポーネント名のキャメルケース + UseCase」とする
 - UseCase では対象 Widget を **AppBar 付き `Scaffold` の `body` 中央**に載せる
 - `AppBar` の `title` は **Widget クラス名と同じ文字列**にする
+- Widget に引数がある場合、UseCase で `context.knobs` を使い **引数名と同じ `label` の Knob** を設置する
 
 # Figma URL がある場合
 
