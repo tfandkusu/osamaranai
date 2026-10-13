@@ -6,10 +6,6 @@ import 'package:widgetbook_annotation/widgetbook_annotation.dart';
 Widget loginIndicatorUseCase(BuildContext context) {
   return Scaffold(
     appBar: AppBar(title: const Text('LoginIndicator')),
-    body: Column(
-      children: [
-        const Padding(padding: EdgeInsets.all(16), child: LoginIndicator()),
-      ],
-    ),
+    body: const Center(child: LoginIndicator()),
   );
 }

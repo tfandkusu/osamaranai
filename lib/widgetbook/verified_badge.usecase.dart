@@ -6,10 +6,6 @@ import 'package:widgetbook_annotation/widgetbook_annotation.dart';
 Widget verifiedBadgeUseCase(BuildContext context) {
   return Scaffold(
     appBar: AppBar(title: const Text('VerifiedBadge')),
-    body: Column(
-      children: [
-        const Padding(padding: EdgeInsets.all(16), child: VerifiedBadge()),
-      ],
-    ),
+    body: const Center(child: VerifiedBadge()),
   );
 }

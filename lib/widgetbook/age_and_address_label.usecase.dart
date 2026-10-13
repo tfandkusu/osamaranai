@@ -6,13 +6,8 @@ import 'package:widgetbook_annotation/widgetbook_annotation.dart';
 Widget ageAndAddressLabelUseCase(BuildContext context) {
   return Scaffold(
     appBar: AppBar(title: const Text('AgeAndAddressLabel')),
-    body: Column(
-      children: [
-        const Padding(
-          padding: EdgeInsets.all(16),
-          child: AgeAndAddressLabel(age: 24, address: '神奈川'),
-        ),
-      ],
+    body: const Center(
+      child: AgeAndAddressLabel(age: 24, address: '神奈川'),
     ),
   );
 }
