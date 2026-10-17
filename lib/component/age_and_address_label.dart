@@ -16,8 +16,6 @@ class AgeAndAddressLabel extends StatelessWidget {
       '$age歳 $address',
       style: Theme.of(context).textTheme.bodyMedium,
       textAlign: TextAlign.center,
-      maxLines: 1,
-      overflow: TextOverflow.ellipsis,
     );
   }
 }
