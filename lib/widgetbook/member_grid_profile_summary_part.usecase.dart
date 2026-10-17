@@ -21,9 +21,14 @@ Widget memberGridProfileSummaryPartUseCase(BuildContext context) {
   return Scaffold(
     appBar: AppBar(title: const Text('MemberGridProfileSummaryPart')),
     body: Center(
-      child: SizedBox(
-        width: parentWidth.toDouble(),
-        child: MemberGridProfileSummaryPart(age: age, address: address),
+      child: DecoratedBox(
+        decoration: BoxDecoration(
+          border: Border.all(color: Theme.of(context).colorScheme.outline),
+        ),
+        child: SizedBox(
+          width: parentWidth.toDouble(),
+          child: MemberGridProfileSummaryPart(age: age, address: address),
+        ),
       ),
     ),
   );
