@@ -24,6 +24,7 @@ class WidgetbookApp extends StatelessWidget {
           IosViewports.iPhone13,
           IosViewports.iPhone13ProMax,
         ]),
+        TextScaleAddon(),
       ],
       appBuilder: (context, child) {
         return MaterialApp(
