@@ -37,10 +37,8 @@ description: 共通コンポーネントを実装するスキルです。
 
 Figma の注釈などで「最大幅は中のテキストが必要とする幅とする」旨がある子（例: `AgeAndAddressLabel`）を `Row` に並べる場合:
 
-- 子は **`Flexible` で包む**（`fit` は省略してよい。既定の `FlexFit.loose` で、テキスト幅以上に伸びない）。
-- **`Expanded` や `Expanded` + `Center` は使わない**（`FlexFit.tight` 相当になり、余白を埋めてしまう）。
+- 子は **`Flexible` で包む**（**`fit` パラメータは付けない**）。
 - 親が広いときの見た目は **`Row` の `mainAxisAlignment: MainAxisAlignment.center`** など、行全体の配置で揃える。
-- `fit: FlexFit.loose` は **`Flexible` の既定と同じなので、明示しなくてよい**（省略可否の確認だけなら、子ごと `Flexible` を外さない）。
 
 # Widgetbook 登録
 
