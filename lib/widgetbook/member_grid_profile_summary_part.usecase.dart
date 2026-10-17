@@ -10,12 +10,19 @@ Widget memberGridProfileSummaryPartUseCase(BuildContext context) {
     label: 'address',
     initialValue: '神奈川',
   );
+  final parentWidth = context.knobs.int.slider(
+    label: 'parentWidth',
+    initialValue: 180,
+    min: 180,
+    max: 360,
+    divisions: 180,
+  );
 
   return Scaffold(
     appBar: AppBar(title: const Text('MemberGridProfileSummaryPart')),
     body: Center(
       child: SizedBox(
-        width: 132,
+        width: parentWidth.toDouble(),
         child: MemberGridProfileSummaryPart(age: age, address: address),
       ),
     ),
