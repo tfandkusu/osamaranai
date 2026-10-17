@@ -25,10 +25,7 @@ class MemberGridProfileSummaryPart extends StatelessWidget {
         children: [
           const LoginIndicator(),
           const SizedBox(width: _gap),
-          Flexible(
-            fit: FlexFit.loose,
-            child: AgeAndAddressLabel(age: age, address: address),
-          ),
+          AgeAndAddressLabel(age: age, address: address),
           const SizedBox(width: _gap),
           const VerifiedBadge(),
         ],
