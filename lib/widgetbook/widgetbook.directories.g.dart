@@ -17,6 +17,8 @@ import 'package:osamaranai/widgetbook/logical_pixel_card.usecase.dart'
     as _osamaranai_widgetbook_logical_pixel_card_usecase;
 import 'package:osamaranai/widgetbook/login_indicator.usecase.dart'
     as _osamaranai_widgetbook_login_indicator_usecase;
+import 'package:osamaranai/widgetbook/member_grid_profile_summary_part.usecase.dart'
+    as _osamaranai_widgetbook_member_grid_profile_summary_part_usecase;
 import 'package:osamaranai/widgetbook/verified_badge.usecase.dart'
     as _osamaranai_widgetbook_verified_badge_usecase;
 import 'package:widgetbook/widgetbook.dart' as _widgetbook;
@@ -52,6 +54,17 @@ final directories = <_widgetbook.WidgetbookNode>[
             name: 'Default',
             builder: _osamaranai_widgetbook_login_indicator_usecase
                 .loginIndicatorUseCase,
+          ),
+        ],
+      ),
+      _widgetbook.WidgetbookComponent(
+        name: 'MemberGridProfileSummaryPart',
+        useCases: [
+          _widgetbook.WidgetbookUseCase(
+            name: 'Default',
+            builder:
+                _osamaranai_widgetbook_member_grid_profile_summary_part_usecase
+                    .memberGridProfileSummaryPartUseCase,
           ),
         ],
       ),
